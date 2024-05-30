@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRPS 진단 프로그램</title>
+</head>
+<body>
+    <div class="highbar">
+        <p>Decfi X Premed</p>
+        <h1>CRPS</h1>
+    </div>
+    <div class="main">
+        
+        <form action="/result" method="post">
+            <label for="inputValue">2PD test 값:</label>
+            <input type="number" step="0.01" id="inputValue" name="inputValue">
+            <button type="submit">진단</button>
+        </form>
+    </div>
+    <style>
+        /* reset.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* index.css */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .highbar {
+            background-color: #447fd2;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .highbar h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .highbar p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="number"] {
+            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #447fd2;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>
